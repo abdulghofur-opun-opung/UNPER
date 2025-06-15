@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:image" content="bg-ucing.jpg" />
+  <title>The Wedding of Mull & Dorce</title>
+  
+  <link rel="icon" href="bg-ucing.jpg" />
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+ 
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+  
+  <div id="intro" class="cover">
+    <h1>The Wedding Of</h1>
+    <img src="bg-ucing.jpg" alt="Foto Kucing">
+    <h2>Mull & Dorce</h2>
+    <p>Kepada <span>Bapak/Ibu/Saudara/i, </span></p>
+    <div class="btn-open" onclick="openInvitation()"><i class="bi bi-envelope-open-heart-fill"></i>Open Invitation</div>
+  </div>
+
+  <div class="invitation" id="invitation">
+    <div class="confetti" id="confetti"></div>
+    <div class="invitation-content">
+      <h1 style="font-family:'Great Vibes'; font-size: 2.5rem;">Undangan Pernikahan</h1>
+      <img src="bg-ucing.jpg" alt="Kucing" style="width: 200px; height: 200px; border-radius: 50%; margin: 20px 0; border: 4px solid white;">
+      <h2 style="font-family:'Great Vibes'; font-size: 2rem;">Mull & Dorce</h2>
+      <p>Kamis, 26 Juni 2025</p>
+      <div class="scroll-down" id="scroll">⬇️ Scroll Down</div>
+    </div>
+  </div>
+  
+ <section class="section bg-white-black text-center section-mempelai;" style="padding: 40px 20px;" id="mempelai" data-aos="fade-up" data-aos-duration="2000">
+<h2 class="font-esthetic py-4 m-0" style="font-size: 2rem;">Pasangan Mempelai</h2>
+<p class="pb-4 px-2 m-0" style="font-size: 0.9rem;">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta’ala, insyaa-Allah kami akan menyelenggarakan acara pernikahan putra kami:</p>
+<div class="jarak-jauh"></div>
+<div class=" pb-4 cover" >
+<div data-aos="fade-right" data-aos-duration="2000" class="pb-1">
+  <img src="ucing-cowo.jpg" data-src="cowo.webp" alt="cowo" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto" >
+    <h2 class="font-esthetic m-0 text-sec" style="font-size: 
+     2.125rem;">Muhammad Zainal Abidin</h2>
+    <hr style="color:#E3A127" id="hr-1" class="" width="100%">
+    <h4 class="font-esthetic m-0 text-sec" style="font-size: 
+     1.2rem;">Mull</h4>
+    <p class="mb-0" style="font-size: 0.75rem;">Sepatan Timur, Tangerang Banten</p>
+    <div class="social-links text-center">
+  <a href="https://facebook.com/profile.php?id=1000267548707&mibextid=ZbWKwl" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+  <a href="https://www.instagram.com/abdulghofur_opuy_opun" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+</div>
+      <p class="mt-3 mb-1" style="font-size: 1.25rem;">Putra ke-1</p>
+    <p class="mb-0" style="font-size: 0.95rem;">Bapak Martin dan Ibu Maimunah</p>
+                        </div>
+
+       <div class="position-relative">
+    <div class="position-absolute" style="top: 0%; left: 5%;">
+                            </div>
+                        </div>
+
+                        <h2 class="font-esthetic mt-4" style="font-size: 4.5rem;">&amp;</h2>
+
+    <div data-aos="fade-left" data-aos-duration="2000" class="pb-1">
+     <img src="ucing-cewe.jpg" data-src="./assets/images/ucing-cewe.jpg" alt="cewe" onclick="undangan.guest.modal(this)" class="img-center-crop rounded-circle border border-3 border-light shadow my-4 mx-auto">
+   <h2 class="font-esthetic m-0" style="font-size: 2.125rem;">Siti Fatimatu Zahro</h2>
+       <hr style="color:#E3A127" id="hr-1" class="" width="100%">
+    <h4 class="font-esthetic m-0 text-sec" style="font-size: 
+     1.2rem;">Dorce</h4>
+      <p class="mb-0" style="font-size: 0.75rem;">Sindanglaka, Cianjur Jawa Barat</p>
+    <div class="social-links text-center">
+  <a href="https://facebook.com/profile.php?id=1000267548707&mibextid=ZbWKwl" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+  <a href="https://www.instagram.com/abdulghofur_opuy_opun" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+</div>
+    <p class="mt-3 mb-1" style="font-size: 1.25rem;">Putri ke-2</p>
+    <p class="mb-0" style="font-size: 0.95rem;">Bapak Tukul dan Ibu Sarboah</p>
+    </div>
+   </div>
+ </section>
+ <!-- SECTION TANGGAL -->
+ 
+   <div class="div-group">
+<section class="section-tanggal section" id="tanggal" style="padding: 40px 20px;" data-aos="fade-up" data-aos-duration="2000">
+    <h2 class="font-esthetic py-4 m-0" style="font-size: 2.5rem;">Momen Bahagia</h2>
+    <p class="pb-4 px-2 m-0" style="font-size: 0.9rem; font-family: 'Great Vibes', cursive">~~ Jun, 26 2025 ~ Dzulh, 30 1446 ~~</p>
+  <div id="tanggal-countdown" class="countdown-container" data-aos="fade-zoom-in-out" data-aos-duration="2000">
+    <div class="countdown-circle" >
+      <span id="days">00</span>
+      <p>Hari</p>
+    </div>
+    <div class="countdown-circle" >
+      <span id="hours">00</span>
+      <p>Jam</p>
+    </div>
+    <div class="countdown-circle" >
+      <span id="minutes">00</span>
+      <p>Menit</p>
+    </div>
+    <div class="countdown-circle" >
+      <span id="seconds">00</span>
+      <p>Detik</p>
+      </div>
+    </div>
+    <img id="ring" style="" height="100" width="100" class="img-fluid mt-5"
+    src="https://akad.in/storage/images/Gclvp0vneoJ5uIGgONVFNfRXgyym4vVOsA5awfGR.png"
+         alt="wedding ring" data-aos="fade-up" data-aos-duration="2000"> <br><br>
+      <p style="font-size: 14px;" class="text-center"data-aos="fade-in" data-aos-duration="2000">"Dan Di Antara Tanda-Tanda (Kebesaran)-Nya Ialah Dia Menciptakan Pasangan-Pasangan Untukmu Dari Jenismu Sendiri, Agar Kamu Cenderung Dan Merasa Tenteram Kepadanya, Dan Dia Menjadikan Di Antaramu Rasa Kasih Dan Sayang. Sesungguhnya Pada Yang Demikian Itu Benar-Benar Terdapat Tanda-Tanda (Kebesaran Allah) Bagi Kaum Yang Berpikir."</p>
+          <h1 style="font-size: 0.9rem;font-weight: bold" id="ayat-pasangan-1">-
+                        Ar-Rum 21 -</h1>
+        <hr style="color:#E3A127" id="hr-1" class="" width="50%">                       
+   <h2 class="font-esthetic py-4 m-0" style="font-size: 2.5rem;" data-aos="fade-up" data-aos-duration="2000">Akad Pernikahan</h2>
+    <section class="bg-white-black pb-2" id="wedding-date">
+       <div class="container text-center">
+        <p class="py-2 m-0" style="font-size: 0.95rem;" 
+        data-aos="fade-up" data-aos-duration="2000">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaAllah kami akan menyelenggarakan acara:</p>
+
+                        <!-- Love animation -->
+   <div class="position-relative">
+  <div class="position-absolute" style="top: 0%; right: 5%;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="opacity-50" data-time="3000" data-class="animate-love" viewBox="0 0 16 16">
+   <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </div>
+                        </div>
+
+  <div class="overflow-x-hidden">
+  <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
+  <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;">Akad</h2>
+   <p style="font-size: 0.95rem;">Pukul 08.00 WIB - Selesai</p>
+                            </div>
+
+  <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
+    <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;">Resepsi</h2>
+    <p style="font-size: 0.95rem;">Pukul 11.00 WIB - Selesai</p>
+                            </div>
+                        </div>
+
+ <p class="py-2 m-0" style="font-size: 0.95rem;" data-aos="fade-up" data-aos-duration="2000">Demi kehangatan bersama, kami memohon kesediaan Anda untuk mengenakan dress code berikut:</p>
+
+    <div class="position-relative">
+   <div class="position-absolute" style="top: 0%; left: 5%;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="opacity-50" data-time="2000" data-class="animate-love" viewBox="0 0 16 16">
+   <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                                </svg>
+                            </div>
+                        </div>
+
+    <div class="py-2" data-aos="fade-down" data-aos-duration="1500">
+    <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;">Kebaya</h2>
+     <p style="font-size: 0.95rem;">Dominasi berwarna putih.</p>
+                        </div>
+
+  <div class="py-2" data-aos="fade-down" data-aos-duration="1500">
+      <h2 class="font-esthetic m-0 py-2" style="font-size: 2rem;">Lokasi</h2>
+  <a href="https://goo.gl/maps/" target="_blank" class="btn btn-map"><i class="bi bi-map-fill"></i></i> Lihat Google Maps</a>
+  <small class="d-block my-1">RT 01 RW 02, Desa Sukatani, Kec. Gerbong, Kab. Tangerang, Banten 21199.</small>
+                        </div>
+                    </div>
+                </section>
+</section>
+  </div>
+  
+
+<!-- SECTION GALERI -->
+<section id="galeri" class="section section-galeri" style=" padding: 40px 20px; text-align: center;" data-aos="fade-up" data-aos-duration="2000">
+  <h2 class="font-esthetic py-4 m-0" style="font-size: 2.5rem;">Galeri Kenangan</h2>
+  <p class="">Momen indah kami</p>
+
+  <div class="slider-container" id="slider" data-aos="fade-up" data-aos-duration="2000">
+    <div class="slider-wrapper">
+      <div class="slide"><img src="g-ucing1.jpg" alt="Foto 1"></div>
+      <div class="slide"><img src="g-ucing2.jpg" alt="Foto 2"></div>
+      <div class="slide"><img src="g-ucing3.jpg" alt="Foto 3"></div>
+    </div>
+    <div class="slider-dots" id="slider-dots"></div>
+  </div>
+  <div class="" style="padding: 50px 20px;"></div>
+  <h2 class="font-esthetic py-4 m-0" style="font-size: 2.5rem;" data-aos="fade-up" data-aos-duration="2000">History</h2>
+  <p class="" data-aos="fade-in" data-aos-duration="2000">Bagaimana Cinta Kami Bersemi</p>
+  <div class="div-history" data-aos="fade-down" data-aos-duration="2000">
+    <div class="testimonial-item">
+                <p class="py-2 m-0" style="font-size: 0.95rem">
+      <i class="fa fa-quote-left" style="color: #E3A127; font-size:18px;"></i>
+      <span class="">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+     <i class="fa fa-quote-right" style="color: #E3A127; font-size:18px;"></i>
+                </p>
+              </div>
+  </div>
+</section>
+
+<!-- SECTION UCAPAN DO'A -->
+<div class="div-group">
+<section id="ucapanDoa" class="section section-ucapan" style="padding: 40px 20px; text-align: center;" data-aos="fade-up" data-aos-duration="2000">
+  <h2 class="font-esthetic py-4 m-0" style="font-size: 2.5rem;">Ucapan & Doa</h2>
+  <p class="pb-4 px-2 m-0" style="font-size: 0.9rem; font-family: 'Great Vibes', cursive">
+    Kami mengaharap do'a dan restu dari kalian
+  </p>
+
+  <!-- Kehadiran -->
+  <div class="container text-center mb-4" data-aos="fade-down" data-aos-duration="2000">
+    <div class="row">
+      <div class="col"><span id="jumlahHadir">0</span><br>Hadir<hr></div>
+      <div class="col"><span id="jumlahBerhalangan">0</span><br>Berhalangan<hr></div>
+      <div class="col"><span id="jumlahRagu">0</span><br>Ragu<hr></div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="div-form mb-5" data-aos="fade-zoom-in-up" data-aos-duration="2000">
+    <h2>Kehadiran & Doa Restu</h2>
+    <form id="formUcapan">
+      <input type="text" id="nama" placeholder="Tulis nama kamu..." required>
+      <select id="kehadiran" required>
+        <option value="Hadir">Hadir</option>
+        <option value="Berhalangan">Berhalangan</option>
+        <option value="Ragu">Ragu</option>
+      </select>
+      <textarea id="pesan" rows="4" placeholder="Tulis ucapan atau doa untuk mempelai..."></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+  <!-- Komentar -->
+  <h2 data-aos="fade-up" data-aos-duration="2000">Ucapan</h2>
+  <div id="info-komentar" style="color: #bbb; font-size: 0.9rem; margin-bottom: 10px;" data-aos="fade-down" data-aos-duration="2000"></div>
+  <ul id="kontainer-komentar" class="list-group mb-2"></ul>
+  <div>
+    <button onclick="tambahKomentar()" class="btn btn-sm "><i class="bi bi-chevron-down" style="color: #E3A127;"></i> Tampilkan lebih banyak</button>
+  </div>
+</section>
+</div>
+
+
+<!-- SECTION PENUTUP -->
+<section class="section section-galeri" id="penutup" style=" padding: 40px 20px; text-align: center;" data-aos="fade-up" data-aos-duration="2000">
+  <h2 class="font-esthetic py-4 m-0" style="font-size: 2.5rem;" data-aos="fade-up" data-aos-duration="2000">Penutup</h2>
+
+    
+  <p class="py-2 m-0" style="font-size: 0.95rem"data-aos="fade-down" data-aos-duration="2000">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila bapak/ibu/saudara/i berkenan hadir untuk memberikan do'a restu kepada putra-putri kami. Terimakasih atas segala do'a dan perhatian yang diberikan.
+<br><br>
+Sampai Jumpa Dihari <br> Bahagia Kami. <br><br>
+Wassalamu'alaikum Warohmatullahi <br> Wabarokatuh</p>
+</p>
+<div>
+    <img src="logo-sunda.png" alt="Foto Kucing" style="width: 50px; height: 100px; margin: 10px 0;">
+</div>
+<p>Kami yang berbahagia: </p>
+<h2>Mull & Dorce</h2>
+<p>Beserta Keluarga</p>
+
+</section>
+
+<section class="section" id="footer">
+  
+<footer style="background-color: #031219; color: #eee; padding: 30px 20px; text-align: center; font-size: 0.9rem; margin-bottom:46px; ">
+  <p style="margin: 0;">&copy; 2025 UNPER Wedding Invitation. <br> Desain oleh <strong>Abdul Ghofur</strong>.</p>
+  
+  <div style="margin-top: 10px;">  <a href="https://www.instagram.com/abdulghofur_opuy_opun" target="_blank" class="instagram"><i class="bi bi-whatsapp"></i></a>
+
+  <a href="https://www.instagram.com/abdulghofur_opuy_opun" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+
+  </div>
+</footer>
+</section>
+ <nav id="nav">
+    <a href="#invitation">
+      <i class="bi bi-house-door"></i>
+      Home
+    </a>
+    <a href="#mempelai">
+      <i class="bi bi-person-heart"></i>
+      Mempelai
+    </a>
+    <a href="#tanggal">
+      <i class="bi bi-calendar-event"></i>
+      Tanggal
+    </a>
+    <a href="#galeri">
+      <i class="bi bi-images"></i>
+      Galeri
+    </a>
+    <a href="#ucapanDoa">
+      <i class="bi bi-chat-dots"></i>
+      Ucapan
+    </a>
+  </nav>
+
+  <div class="music-button" id="musicButton" onclick="toggleMusic()">🎵</div>
+  <audio id="music" loop>
+    <source src="save-and-sound.mp3" type="audio/mpeg">
+  </audio>
+</div>
+      <div id="loading-screen">
+    <div class="progress-container">
+      <div class="progress-bar" id="progress-bar"></div>
+      <p id="progress-text">Loading confetti complete (0/21) [0%]</p>
+    </div>
+    <div class="footer">From <br><a href="https://github.com/abdul" target="_blank">Abdul Ghofur</a></div>
+  </div>
+
+<script>
+  // Firebase setup
+  const firebaseConfig = {
+    apiKey: "AIzaSyAiSmrRlIMAJbbGGpQlb-Nw68sQqS3Ngsc",
+    authDomain: "ucapanpernikahan.firebaseapp.com",
+    databaseURL: "https://ucapanpernikahan-default-rtdb.firebaseio.com",
+    projectId: "ucapanpernikahan",
+    storageBucket: "ucapanpernikahan.appspot.com",
+    messagingSenderId: "879515260459",
+    appId: "1:879515260459:web:d2eda2676077df750efc6e"
+  };
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database().ref("ucapan");
+
+  // Form submit
+  document.getElementById("formUcapan").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const nama = document.getElementById("nama").value.trim();
+    const hadir = document.getElementById("kehadiran").value;
+    const ucapan = document.getElementById("pesan").value.trim();
+
+    if (!nama || !hadir) return alert("Isi semua data!");
+
+    db.push({ nama, hadir, ucapan, waktu: Date.now() });
+    alert("Ucapan terkirim!");
+    this.reset();
+  });
+
+  // Data
+  let semuaKomentar = [];
+  let jumlahTampil = 2;
+
+  function tampilkanKomentar() {
+    const kontainer = document.getElementById("kontainer-komentar");
+    kontainer.innerHTML = "";
+
+    semuaKomentar.slice(0, jumlahTampil).forEach(val => {
+      const li = document.createElement("li");
+      li.className = "list-group-item d-flex justify-content-between align-items-start";
+      li.style = "background-color: transparent; color: #eaeaea; border: 1px solid #444;";
+      li.innerHTML = `
+        <div class="me-2"><i class="bi bi-person-circle fs-4"></i></div>
+        <div class="ms-2 me-auto text-start">
+          <div class="fw-bold">${val.nama}</div>
+          <p style="color: #bbb; margin: 0;">${val.ucapan}</p>
+        </div>
+      `;
+      kontainer.appendChild(li);
+    });
+
+    const info = document.getElementById("info-komentar");
+    info.textContent = `${Math.min(jumlahTampil, semuaKomentar.length)} komentar terbaru dari ${semuaKomentar.length}`;
+  }
+
+  function tambahKomentar() {
+    jumlahTampil += 2;
+    tampilkanKomentar();
+  }
+
+  db.orderByChild("waktu").on("value", snapshot => {
+    let hadir = 0, berhalangan = 0, ragu = 0;
+    semuaKomentar = [];
+
+    snapshot.forEach(s => {
+      const val = s.val();
+      if (val.hadir === "Hadir") hadir++;
+      else if (val.hadir === "Berhalangan") berhalangan++;
+      else if (val.hadir === "Ragu") ragu++;
+
+      if (val.ucapan && val.ucapan.trim() !== "") {
+        semuaKomentar.unshift(val);
+      }
+    });
+
+    document.getElementById("jumlahHadir").textContent = hadir + 1845;
+    document.getElementById("jumlahBerhalangan").textContent = berhalangan + 19;
+    document.getElementById("jumlahRagu").textContent = ragu + 2;
+
+    jumlahTampil = 2;
+    tampilkanKomentar();
+  });
+</script>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const sliderWrapper = document.querySelector('.slider-wrapper');
+const totalSlides = slides.length;
+const dotsContainer = document.getElementById('slider-dots');
+
+// Generate dots
+for (let i = 0; i < totalSlides; i++) {
+  const dot = document.createElement('span');
+  if (i === 0) dot.classList.add('active');
+  dotsContainer.appendChild(dot);
+}
+const dots = document.querySelectorAll('#slider-dots span');
+
+function showSlide(index) {
+  if (index >= totalSlides) index = 0;
+  if (index < 0) index = totalSlides - 1;
+  sliderWrapper.style.transform = `translateX(-${index * 100}%)`;
+  currentSlide = index;
+  updateDots();
+}
+
+function updateDots() {
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[currentSlide].classList.add('active');
+}
+
+// Auto-slide
+setInterval(() => {
+  showSlide(currentSlide + 1);
+}, 6000);
+
+// Swipe gesture
+let startX = 0;
+let endX = 0;
+const slider = document.getElementById('slider');
+
+slider.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', (e) => {
+  endX = e.changedTouches[0].clientX;
+  if (startX - endX > 50) {
+    showSlide(currentSlide + 1);
+  } else if (endX - startX > 50) {
+    showSlide(currentSlide - 1);
+  }
+});
+</script>
+
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+<script>
+  const weddingDate = new Date("2025-06-26T08:00:00").getTime();
+
+  const countdown = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = weddingDate - now;
+
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.getElementById("tanggal-countdown").innerHTML = "<p>Acara telah dimulai!</p>";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = String(days).padStart(2, '0');
+    document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+    document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+    document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+  }, 1000);
+</script>
+  <style>
+    @keyframes fall {
+      to {
+        transform: translateY(100vh);
+      }
+    }
+  </style>
+  
+</body>
+</html>
